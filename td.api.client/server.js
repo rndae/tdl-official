@@ -6,7 +6,9 @@ const sendEmail = require('./mailer');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-app.use(cors());
+app.use(cors({
+    origin: ['www.testdrivelive.com', 'testdrivelive.com']
+}));
 
 app.get("/api/home", (req, res) => {
   res.json({ message: "This is the 'home' API endpoint, there is nothing else to see here..."});
