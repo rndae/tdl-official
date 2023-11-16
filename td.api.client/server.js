@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 app.use(cors({
-    origin: ['www.testdrivelivetv.com', 'testdrivelivetv.com','td-frontend-client-test-drive-live-devs.vercel.app']
+    origin: ['http://www.testdrivelivetv.com','https://www.testdrivelivetv.com','www.testdrivelivetv.com', 'testdrivelivetv.com','td-frontend-client-test-drive-live-devs.vercel.app']
 }));
 
 app.get("/api/home", (req, res) => {
