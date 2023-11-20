@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 app.use(cors({
-    origin: ['www.testdrivelivetv.com', 'testdrivelivetv.com']
+  origin: ['http://localhost:3000', 'www.testdrivelivetv.com', 'testdrivelivetv.com', 'td-frontend-client-test-drive-live-devs.vercel.app']
 }));
 
 app.get("/api/home", (req, res) => {
@@ -36,7 +36,7 @@ app.post('/api/email', (req, res) => {
   });
 
 
-  const codes = ['1234', '5678', 'abcd', 'efgh']
+  const codes = ['1234', '5678', 'abcd', 'cigar'];
 
   // Mock function that returns a user object based on the code
   // To do: Change logic to generate the user object
