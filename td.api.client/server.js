@@ -49,7 +49,7 @@ app.post('/api/email', (req, res) => {
   }
   
   // Endpoint that verifies the code and returns the user object or an error
-  app.post('/api/codes', (req, res) => {
+  app.post('/api/verify-code', (req, res) => {
     const { code } = req.body
     if (codes.includes(code)) {
       const user = getUserByCode(code)
