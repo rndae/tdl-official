@@ -36,7 +36,7 @@ app.post('/api/email', (req, res) => {
   });
 
 
-  const codes = ['1234', '5678', 'abcd', 'cigar'];
+  const codes = ['1234', 'SignalSpectrum', 'PixelPulse', 'WaveformWindow', 'ScreenSweep', 'BroadcastBlink', 'cigar'];
 
   // Mock function that returns a user object based on the code
   // To do: Change logic to generate the user object
